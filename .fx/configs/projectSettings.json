@@ -1,0 +1,23 @@
+{
+    "appName": "volunteer",
+    "projectId": "f1c49868-5a35-46e0-96bd-d6ba9ae14e23",
+    "solutionSettings": {
+        "name": "fx-solution-azure",
+        "version": "1.0.0",
+        "hostType": "Azure",
+        "azureResources": [],
+        "capabilities": [
+            "Bot",
+            "MessagingExtension"
+        ],
+        "activeResourcePlugins": [
+            "fx-resource-bot",
+            "fx-resource-aad-app-for-teams",
+            "fx-resource-local-debug",
+            "fx-resource-appstudio"
+        ]
+    },
+    "version": "1.0.0",
+    "activeEnvironment": "dev",
+    "programmingLanguage": "javascript"
+}

@@ -1,0 +1,67 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+      {
+          "type": "TextBlock",
+          "size": "Medium",
+          "weight": "Bolder",
+          "text": "Welcome to the volunteer bot. Please press the buttons below to start.",
+          "wrap": true
+      }
+  ],
+  "actions": [
+      {
+          "type": "Action.OpenUrl",
+          "title": "View My Events",
+          "url": "https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0"
+      },
+      {
+          "type": "Action.OpenUrl",
+          "title": "View Active Events",
+          "url": "https://aka.ms/teamsfx-docs"
+      },
+      {
+          "type": "Action.ShowCard",
+          "title": "Create New Event",
+          "card": {
+              "type": "AdaptiveCard",
+              "body": [
+                  {
+                      "type": "TextBlock",
+                      "text": "Please provide the information of your event",
+                      "wrap": true
+                  },
+                  {
+                      "type": "Input.Text",
+                      "id": "name",
+                      "placeholder": "event name"
+                  },
+                  {
+                      "type": "Input.Text",
+                      "id": "desc",
+                      "isMultiline": true,
+                      "placeholder": "description of the event"
+                  },
+                  {
+                      "type": "Input.Number",
+                      "id": "count",
+                      "placeholder": "How many volunteers do you want?",
+                      "value": 5,
+                      "min": 1,
+                      "max": 999
+                  }
+              ],
+              "actions": [
+                {
+                  "type": "Action.Execute",
+                  "title": "Create",
+                  "verb": "create",
+                  "fallback": "Action.Submit"
+                }
+              ]
+          }
+      }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}
