@@ -1,0 +1,37 @@
+{
+    "solution": {
+        "resourceNameSuffix": "133fbf",
+        "resourceGroupName": "volunteer-dev-rg",
+        "tenantId": "6ee9d516-df7f-4cb8-932a-f92a401d52aa",
+        "subscriptionId": "580ae4ee-398d-46f5-8f20-80d42b59e53d",
+        "subscriptionName": "Visual Studio Enterprise Subscription",
+        "location": "East Asia",
+        "teamsAppTenantId": "{{solution.teamsAppTenantId}}",
+        "resource_base_name": "volunteer133fbf",
+        "provisionSucceeded": true
+    },
+    "fx-resource-appstudio": {
+        "teamsAppId": "d4ed346d-f96f-447c-b796-774f9e8580bf"
+    },
+    "fx-resource-bot": {
+        "botId": "53444860-9e11-4fe8-8975-ca50b17638dc",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "objectId": "36cf8123-830a-408a-baf7-9d7f5d19aea8",
+        "validDomain": "volunteer133fbf-bot-sites.azurewebsites.net",
+        "appServicePlan": "volunteer133fbf-bot-serverfarms",
+        "botChannelReg": "volunteer133fbf-bot-service",
+        "siteName": "volunteer133fbf-bot-sites",
+        "siteEndpoint": "https://volunteer133fbf-bot-sites.azurewebsites.net",
+        "skuName": "F1"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "c33b12b4-280a-4995-a56a-55a9054ccd1c",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "0f42df7b-bb0b-4323-b3fe-475fa4d7fe8c",
+        "oauth2PermissionScopeId": "e7ca7e93-0987-4b83-8912-d117c8a85150",
+        "tenantId": "c9537f2e-3b11-4a32-bf73-98a9ccedaf66",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/c9537f2e-3b11-4a32-bf73-98a9ccedaf66",
+        "applicationIdUris": "api://botid-53444860-9e11-4fe8-8975-ca50b17638dc"
+    }
+}

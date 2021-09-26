@@ -4,6 +4,7 @@ const { TeamsActivityHandler, CardFactory, TurnContext} = require("botbuilder");
 const rawWelcomeCard = require("./adaptiveCards/welcome.json");
 const rawLearnCard = require("./adaptiveCards/learn.json");
 const ACData = require("adaptivecards-templating");
+const { addEvent } = require("./sql");
 
 class TeamsBot extends TeamsActivityHandler {
   constructor() {
@@ -88,6 +89,7 @@ class TeamsBot extends TeamsActivityHandler {
       let count = invokeValue.action.data["count"]
 
       //let user = ??
+      addEvent(name, desc, count, 'aa')
       await context.sendActivity("Create a new event with name = " + name + ",description = " + desc + ", count = " + count);
     }
     return {
